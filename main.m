@@ -100,7 +100,7 @@ AnesEnd   = EEGl.times(round(EEGl.event(5).latency))*1e-3/60; % Anesthetized-End
 
 figure('position',[10 10 700 800]);
 % modulation strength
-subplot(311);hold on;yl=[0.9 3];
+subplot(311);hold on;yl=[0.9 5];
 plot(ftrTim*1e-3/60,ftrSNR(ch,:),'color',[.5 .5 .5],'linewidth',2); 
 plot([1 1].*AnesInj,yl,'--k','linewidth',2);
 plot([1 1].*AnesStart,[yl(1) yl(1)+diff(yl)/2],'--b','linewidth',1.5);
